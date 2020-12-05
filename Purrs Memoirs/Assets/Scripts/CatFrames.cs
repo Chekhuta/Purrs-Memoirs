@@ -7,5 +7,4 @@ public class CatFrames : MonoBehaviour {
     public Sprite[] GetCatFrames() {
         return catFramesAnimation;
     }
-
 }

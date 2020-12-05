@@ -7,7 +7,6 @@ public class CorrectRatio : MonoBehaviour {
     public Transition transition;
 
     private void Start() {
-
         float targetAspect = 9.0f / 16.0f;
         float windowAspect = (float)Screen.width / Screen.height;
 

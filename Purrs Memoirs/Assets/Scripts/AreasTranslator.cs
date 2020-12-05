@@ -19,5 +19,4 @@ public class AreasTranslator : MonoBehaviour {
         Soon1.text = languageTitles.soonTitle;
         Soon2.text = languageTitles.soonTitle;
     }
-
 }

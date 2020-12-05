@@ -80,15 +80,15 @@ public class TaskType {
         return CompareTypes(otherTaskType);
     }
 
+    public TaskTypeName GetTaskTypeName() {
+        return typeName;
+    }
+
     protected bool CompareTypes(TaskType otherTaskType) {
         if (typeName == otherTaskType.typeName) {
             return true;
         }
         return false;
-    }
-
-    public TaskTypeName GetTaskTypeName() {
-        return typeName;
     }
 }
 
@@ -142,6 +142,4 @@ public class FieldTaskType : TaskType {
         }
         return false;
     }
-
-    
 }

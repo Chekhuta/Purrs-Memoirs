@@ -100,7 +100,6 @@ public class DuelOpponent : MonoBehaviour {
     }
 
     public void UpdateStorageTimeInCycle(int[] boxesIds) {
-
         List<MemoryCell> memoryCellsCycle = new List<MemoryCell>();
 
         foreach (MemoryCell m in opponentMemory) {
@@ -156,7 +155,6 @@ public class DuelOpponent : MonoBehaviour {
     }
 
     public IEnumerator OpenBoxes(Box box1, Box box2) {
-
         SpriteRenderer opponentRenderer = GetComponent<SpriteRenderer>();
 
         yield return StartCoroutine(OpenBoxByOpponent(0.5f, box1, opponentRenderer));
@@ -164,7 +162,6 @@ public class DuelOpponent : MonoBehaviour {
     }
 
     private IEnumerator OpenBoxByOpponent(float delay, Box box, SpriteRenderer opponentRenderer) {
-
         yield return new WaitForSeconds(delay);
         transform.localPosition = box.transform.localPosition + offset;
         opponentRenderer.enabled = true;

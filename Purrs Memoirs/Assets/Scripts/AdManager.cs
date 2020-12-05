@@ -4,8 +4,8 @@ using GoogleMobileAds.Api;
 
 public class AdManager : MonoBehaviour {
 
-    public bool IsInGame { get; set; } = false;
-    private static bool mobileAdsInit = false;
+    public bool IsInGame { get; set; }
+    private static bool mobileAdsInit;
     private string interstitialID = "";
     private string rewardVideoID = "";
     private bool internetConnection = true;
@@ -27,13 +27,11 @@ public class AdManager : MonoBehaviour {
     }
 
     private void Start() {
-
         if (DataStorage.NPA == -2) {
             return;
         }
 
         rewardVideoAd = RewardBasedVideoAd.Instance;
-
         rewardVideoAd.OnAdLoaded += HandleRewardBasedVideoLoaded;
         rewardVideoAd.OnAdFailedToLoad += HandleRewardBasedVideoFailedToLoad;
         rewardVideoAd.OnAdRewarded += HandleRewardBasedVideoRewarded;
@@ -185,5 +183,4 @@ public class AdManager : MonoBehaviour {
     public void HandleRewardBasedVideoRewarded(object sender, Reward args) {
         levelCompletePanel.ContinueGame();
     }
-
 }

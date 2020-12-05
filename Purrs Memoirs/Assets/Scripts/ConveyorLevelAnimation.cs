@@ -13,7 +13,7 @@ public class ConveyorLevelAnimation : MonoBehaviour {
     private List<int> cornerId;
     private List<int> vergeId;
     
-    void Start() {
+    private void Start() {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 

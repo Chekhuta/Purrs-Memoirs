@@ -4,11 +4,10 @@ using UnityEngine.UI;
 public class Areas : MonoBehaviour {
 
     public Text starsText;
-
     public AudioClip clickSound;
     private AudioSource audioSource;
 
-    void Start() {
+    private void Start() {
         audioSource = GetComponent<AudioSource>();
         starsText.text = DataStorage.GetSumOfStars() + " / 90";
     }

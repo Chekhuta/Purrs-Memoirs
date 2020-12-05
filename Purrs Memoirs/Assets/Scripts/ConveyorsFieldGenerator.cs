@@ -27,7 +27,6 @@ public class ConveyorsFieldGenerator : MonoBehaviour {
     private GameObject[] spawners;
 
     public void InitConveyorsPositions(int gameMode, int levelNumber) {
-
         spawnOffsetX = 10.24f * levelNumber;
 
         switch(gameMode) {
@@ -351,7 +350,6 @@ public class ConveyorsFieldGenerator : MonoBehaviour {
     }
 
     private void SpawnConveyors(int levelNumber) {
-
         int n = 0;
         for (int i = 0; i < conveyorsPositions.GetLength(0); i++) {
             for (int j = 0; j < conveyorsPositions.GetLength(1); j++) {

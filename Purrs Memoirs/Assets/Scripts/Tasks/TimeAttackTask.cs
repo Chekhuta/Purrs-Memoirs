@@ -40,6 +40,8 @@ public class TimeAttackTask : Task {
         if (!IsTaskCompleted() && progress >= steps) {
             return true;
         }
-        return false;
+        else {
+            return false;
+        }
     }
 }

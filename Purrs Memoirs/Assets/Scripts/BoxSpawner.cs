@@ -64,7 +64,6 @@ public class BoxSpawner : MonoBehaviour {
     }
 
     private IEnumerator MoveSpawnerToRight() {
-
         GameObject[] spawnersGameObject = level.spawners;
         Transform[] spawner = new Transform[spawnersGameObject.Length];
         for (int i = 0; i < spawnersGameObject.Length; i++) {
@@ -95,5 +94,4 @@ public class BoxSpawner : MonoBehaviour {
             }
         }
     }
-
 }

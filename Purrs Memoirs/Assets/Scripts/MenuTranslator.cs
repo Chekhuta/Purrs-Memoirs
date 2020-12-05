@@ -43,5 +43,4 @@ public class MenuTranslator : MonoBehaviour {
         quickGamePaperText.text = languageTitles.quickGamePaperTitle;
         yesText.text = languageTitles.yesTitle;
     }
-
 }

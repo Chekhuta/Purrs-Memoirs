@@ -8,5 +8,4 @@ public class LevelsTranslator : MonoBehaviour {
     private void Start() {
         selectLevelText.text = LanguageTitles.GetInstance().selectLevelTitle;
     }
-
 }

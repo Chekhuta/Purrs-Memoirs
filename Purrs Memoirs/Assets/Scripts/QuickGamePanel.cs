@@ -156,5 +156,4 @@ public class QuickGamePanel : MonoBehaviour {
     private void PlayClickSound() {
         Sounds.GetInstance().PlayClickSound();
     }
-
 }

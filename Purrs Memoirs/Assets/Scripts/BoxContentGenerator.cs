@@ -12,7 +12,6 @@ public class BoxContentGenerator : MonoBehaviour {
     }
 
     public void InitValuesForContent(int countOfBoxes) {
-
         List<int> catFramesIndex = new List<int>();
 
         for (int i = 0; i < catFrames.Length; i++) {

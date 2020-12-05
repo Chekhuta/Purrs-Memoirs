@@ -69,5 +69,4 @@ public class GDPRPopup : MonoBehaviour {
     public void OpenPartnerPrivacyPolicy() {
         Application.OpenURL("");
     }
-
 }

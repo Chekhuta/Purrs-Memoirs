@@ -18,5 +18,4 @@ public class PurrAnimation : MonoBehaviour {
             yield return new WaitForSeconds(0.04f);
         }
     }
-
 }

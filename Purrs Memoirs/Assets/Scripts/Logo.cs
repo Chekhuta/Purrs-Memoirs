@@ -23,7 +23,6 @@ public class Logo : MonoBehaviour {
     private AudioSource audioSource;
     private bool isPopupOpened;
 
-
     private void Start() {
         fontTexture.filterMode = FilterMode.Point;
         audioSource = GetComponent<AudioSource>();
@@ -34,7 +33,6 @@ public class Logo : MonoBehaviour {
     }
 
     private IEnumerator CheckPopupEnabled() {
-
         yield return new WaitForSeconds(1.4f);
 
         if (!isPopupOpened) {
@@ -44,7 +42,6 @@ public class Logo : MonoBehaviour {
     }
 
     private IEnumerator ShowLogo() {
-
         yield return new WaitForSeconds(1);
 
         for (int i = 0; i < catFrames.Length; i++) {
@@ -112,5 +109,4 @@ public class Logo : MonoBehaviour {
         LanguageTitles.SetInstance(JsonUtility.FromJson<LanguageTitles>(((TextAsset)titlesFileOperationHandle.Result).text));
         Addressables.Release(titlesFileOperationHandle);
     }
-
 }

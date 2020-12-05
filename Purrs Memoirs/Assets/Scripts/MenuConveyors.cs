@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class MenuConveyors : MonoBehaviour {
 
-
     public Animator[] leftSpawners;
     public Animator[] rightSpawners;
     public ConveyorLevelAnimation[] conveyors;

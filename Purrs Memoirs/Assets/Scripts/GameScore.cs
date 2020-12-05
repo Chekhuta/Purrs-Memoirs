@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
 public class GameScore : MonoBehaviour{
+
     public UILevelBar levelBar;
     public int ScoreValue { get; set; } = 0;
     public float LevelTime { get; set; } = 0;

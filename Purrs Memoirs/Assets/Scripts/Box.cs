@@ -17,7 +17,7 @@ public class Box : MonoBehaviour, IPointerDownHandler {
     private SpriteRenderer boxRenderer;
     private AudioSource audioSource;
 
-    void Start() {
+    private void Start() {
         audioSource = GetComponent<AudioSource>();
         boxRenderer = GetComponent<SpriteRenderer>();
     }

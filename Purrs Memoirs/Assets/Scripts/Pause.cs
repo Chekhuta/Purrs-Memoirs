@@ -63,5 +63,4 @@ public class Pause : MonoBehaviour {
         pauseAnimator.SetTrigger("Close Background");
         FindObjectOfType<Game>().ContinueGame();
     }
-
 }

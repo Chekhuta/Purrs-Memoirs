@@ -42,5 +42,4 @@ public class LevelParametersGenerator : MonoBehaviour {
             CountOfCycle = 0;
         }
     }
-
 }

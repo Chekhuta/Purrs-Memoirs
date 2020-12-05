@@ -29,11 +29,9 @@ public class FieldTask : Task {
         return new FieldTask(fieldSize.x, fieldSize.y, steps, reward);
     }
 
-    private FieldTask(int sizeX, int sizeY, int taskSteps, int taskReward) : base(new FieldTaskType(TaskTypeName.FieldTask, sizeX, sizeY), taskSteps, taskReward) {
-    }
+    private FieldTask(int sizeX, int sizeY, int taskSteps, int taskReward) : base(new FieldTaskType(TaskTypeName.FieldTask, sizeX, sizeY), taskSteps, taskReward) { }
 
-    public override string GetDescription() {
-        
+    public override string GetDescription() {      
         int x = ((FieldTaskType)taskType).GetFieldSize().x;
         int y = ((FieldTaskType)taskType).GetFieldSize().y;
         if (x > y) {
